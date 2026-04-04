@@ -209,7 +209,7 @@ document.querySelectorAll(".faq").forEach(item => {
 const translations = {};
 
 async function loadTranslations() {
-  const res = await fetch(`/${lang}/${lang}.json`);
+  const res = await fetch(`/i18n/${lang}/${lang}.json`);
   const data = await res.json();
   Object.assign(translations, data);
   applyTranslations();
