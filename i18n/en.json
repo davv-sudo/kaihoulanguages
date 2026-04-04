@@ -1,6 +1,6 @@
 {
   "nav": {
-    "hero": "Home",
+    "home": "Home",
     "about": "About",
     "services": "Services",
     "team": "Team",
@@ -13,15 +13,26 @@
     "desc": "Bridging language and technology. We support open-source projects."
   },
   "about": {
+    "title": "About",
     "text": "Kaihou Languages combines technology and languages to remove barriers for open-source developers and small projects. We provide free translation, interpreting, and digital language support."
   },
   "services": {
     "title": "Services",
-    "translation": "Documents, READMEs, project websites, and simple content for open-source projects.",
-    "interpreting": "Support for online meetings, discussions, and small team communications.",
-    "tools": "Chatbots, Telegram bots, and language tools to assist open-source communities."
+    "translation": {
+      "title": "Translation",
+      "desc": "Documents, READMEs, project websites, and simple content for open-source projects."
+    },
+    "interpreting": {
+      "title": "Interpreting",
+      "desc": "Support for online meetings, discussions, and small team communications."
+    },
+    "tools": {
+      "title": "Digital Tools",
+      "desc": "Chatbots, Telegram bots, and language tools to assist open-source communities."
+    }
   },
   "team": {
+    "title": "Team",
     "members": [
       {"name": "Alex", "role": "Lead Translator"},
       {"name": "Mina", "role": "Localization Expert"},
@@ -37,10 +48,12 @@
   },
   "contact": {
     "title": "Contact",
-    "name": "Name",
-    "email": "Email",
-    "message": "Message",
-    "send": "Send"
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send"
+    }
   },
   "footer": {
     "rights": "© 2026 Kaihou Languages"

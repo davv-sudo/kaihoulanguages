@@ -1,6 +1,6 @@
 {
   "nav": {
-    "hero": "Accueil",
+    "home": "Accueil",
     "about": "À propos",
     "services": "Services",
     "team": "Équipe",
@@ -8,39 +8,67 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Kaihou Languages",
+    "title": "Kaihou Langues",
     "subtitle": "Ouvert",
     "desc": "Relier la langue et la technologie. Nous soutenons les projets open-source."
   },
   "about": {
+    "title": "À propos",
     "text": "Kaihou Languages combine technologie et langues pour supprimer les barrières pour les développeurs et petits projets open-source. Nous offrons traduction, interprétation et support numérique gratuit."
   },
   "services": {
     "title": "Services",
-    "translation": "Documents, README, sites web de projets et contenu simple pour les projets open-source.",
-    "interpreting": "Support pour réunions en ligne, discussions et communication dans les petites équipes.",
-    "tools": "Chatbots, bots Telegram et outils linguistiques pour aider les communautés open-source."
+    "translation": {
+      "title": "Traduction",
+      "desc": "Documents, README, sites web de projets et contenu simple pour les projets open-source."
+    },
+    "interpreting": {
+      "title": "Interprétation",
+      "desc": "Support pour réunions en ligne, discussions et communication dans les petites équipes."
+    },
+    "tools": {
+      "title": "Outils Numériques",
+      "desc": "Chatbots, bots Telegram et outils linguistiques pour aider les communautés open-source."
+    }
   },
   "team": {
+    "title": "Équipe",
     "members": [
-      {"name": "Alex", "role": "Traducteur Principal"},
-      {"name": "Mina", "role": "Experte en Localisation"},
-      {"name": "Kai", "role": "Intégration IA"}
+      {
+        "name": "Alex",
+        "role": "Traducteur Principal"
+      },
+      {
+        "name": "Mina",
+        "role": "Experte en Localisation"
+      },
+      {
+        "name": "Kai",
+        "role": "Intégration IA"
+      }
     ]
   },
   "faq": {
     "title": "FAQ",
     "items": [
-      {"question": "Pour qui est-ce?", "answer": "Projets open-source, petites équipes et individus ayant besoin d'assistance en traduction."},
-      {"question": "Les services sont-ils gratuits?", "answer": "Complètement gratuits pour les projets open-source. Les dons sont appréciés mais optionnels. Les entreprises privées paient un support à faible coût si demandé."}
+      {
+        "question": "Pour qui est-ce?",
+        "answer": "Projets open-source, petites équipes et individus ayant besoin d'assistance en traduction."
+      },
+      {
+        "question": "Les services sont-ils gratuits?",
+        "answer": "Complètement gratuits pour les projets open-source. Les dons sont appréciés mais optionnels. Les entreprises privées paient un support à faible coût si demandé."
+      }
     ]
   },
   "contact": {
     "title": "Contact",
-    "name": "Nom",
-    "email": "Email",
-    "message": "Message",
-    "send": "Envoyer"
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Envoyer"
+    }
   },
   "footer": {
     "rights": "© 2026 Kaihou Languages"

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaihou Langues — Open</title>
+  <title>Kaihou Languages — Open</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script>
@@ -20,46 +20,38 @@
       }
     }
   </script>
-
-  <!-- Langue -->
-  <script>
-    const lang = 'fr';
-  </script>
-
   <style>
     html { scroll-behavior: smooth; }
   </style>
 </head>
 <body class="bg-bg text-text font-sans">
-
-<!-- NAVIGATION -->
 <nav class="fixed top-0 w-full bg-bg border-b border-border z-50">
   <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
     <span class="font-bold text-lg">Kaihou</span>
-    <div class="hidden md:flex space-x-6" id="nav-links">
-      <a href="#hero"></a>
-      <a href="#about"></a>
-      <a href="#services"></a>
-      <a href="#team"></a>
-      <a href="#faq"></a>
-      <a href="#contact"></a>
+    <div class="hidden md:flex space-x-6">
+      <a href="#hero" data-i18n="nav.home"></a>
+      <a href="#about" data-i18n="nav.about"></a>
+      <a href="#services" data-i18n="nav.services"></a>
+      <a href="#team" data-i18n="nav.team"></a>
+      <a href="#faq" data-i18n="nav.faq"></a>
+      <a href="#contact" data-i18n="nav.contact"></a>
     </div>
     <div class="hidden md:flex items-center space-x-2 ml-4">
-      <a href="/index.html" class="text-sm">EN</a>
+      <a href="/index.html" class="text-sm hover:text-white">EN</a>
       <span class="text-gray-600">|</span>
-      <a href="/fr/index.html" class="text-sm">FR</a>
+      <a href="/fr/index.html" class="text-sm hover:text-white">FR</a>
       <span class="text-gray-600">|</span>
-      <a href="/es/index.html" class="text-sm">ES</a>
+      <a href="/es/index.html" class="text-sm hover:text-white">ES</a>
     </div>
     <button id="menu-btn" class="md:hidden"><i class="fas fa-bars"></i></button>
   </div>
   <div id="mobile-menu" class="hidden flex-col p-4 border-t border-border md:hidden">
-    <a href="#hero"></a>
-    <a href="#about"></a>
-    <a href="#services"></a>
-    <a href="#team"></a>
-    <a href="#faq"></a>
-    <a href="#contact"></a>
+    <a href="#hero" data-i18n="nav.home"></a>
+    <a href="#about" data-i18n="nav.about"></a>
+    <a href="#services" data-i18n="nav.services"></a>
+    <a href="#team" data-i18n="nav.team"></a>
+    <a href="#faq" data-i18n="nav.faq"></a>
+    <a href="#contact" data-i18n="nav.contact"></a>
     <div class="flex space-x-4 mt-4 pt-4 border-t border-border">
       <a href="/index.html">EN</a>
       <a href="/fr/index.html">FR</a>
@@ -67,206 +59,107 @@
     </div>
   </div>
 </nav>
-
-<!-- HERO -->
 <section id="hero" class="min-h-screen flex items-center justify-center text-center px-4 fade">
   <div>
-    <h1 class="text-5xl md:text-7xl font-bold mb-4" id="hero-title"></h1>
-    <p class="text-xl text-gray-400 mb-6" id="hero-subtitle"></p>
-    <p class="text-lg text-gray-400 max-w-xl mx-auto" id="hero-desc"></p>
+    <h1 class="text-5xl md:text-7xl font-bold mb-4" data-i18n="hero.title"></h1>
+    <p class="text-xl text-gray-400 mb-6" data-i18n="hero.subtitle"></p>
+    <p class="text-lg text-gray-400 max-w-xl mx-auto" data-i18n="hero.desc"></p>
   </div>
 </section>
-
-<!-- ABOUT -->
 <section id="about" class="py-20 max-w-4xl mx-auto text-center fade">
-  <h2 class="text-3xl font-bold mb-6" id="about-title"></h2>
-  <p class="text-lg text-gray-300" id="about-desc"></p>
+  <h2 class="text-3xl font-bold mb-6" data-i18n="about.title"></h2>
+  <p class="text-lg text-gray-300" data-i18n="about.text"></p>
 </section>
-
-<!-- SERVICES -->
 <section id="services" class="py-20 max-w-6xl mx-auto px-4 fade">
-  <h2 class="text-3xl font-bold mb-10 text-center" id="services-title"></h2>
-  <div class="grid md:grid-cols-3 gap-6 text-center" id="services-list">
+  <h2 class="text-3xl font-bold mb-10 text-center" data-i18n="services.title"></h2>
+  <div class="grid md:grid-cols-3 gap-6 text-center">
     <div class="bg-card p-6 border border-border">
-      <h3 class="font-semibold mb-2"></h3>
-      <p class="text-gray-400 text-sm"></p>
+      <h3 class="font-semibold mb-2" data-i18n="services.translation.title"></h3>
+      <p class="text-gray-400 text-sm" data-i18n="services.translation.desc"></p>
     </div>
     <div class="bg-card p-6 border border-border">
-      <h3 class="font-semibold mb-2"></h3>
-      <p class="text-gray-400 text-sm"></p>
+      <h3 class="font-semibold mb-2" data-i18n="services.interpreting.title"></h3>
+      <p class="text-gray-400 text-sm" data-i18n="services.interpreting.desc"></p>
     </div>
     <div class="bg-card p-6 border border-border">
-      <h3 class="font-semibold mb-2"></h3>
-      <p class="text-gray-400 text-sm"></p>
+      <h3 class="font-semibold mb-2" data-i18n="services.tools.title"></h3>
+      <p class="text-gray-400 text-sm" data-i18n="services.tools.desc"></p>
     </div>
   </div>
 </section>
-
-<!-- TEAM -->
 <section id="team" class="py-20 max-w-6xl mx-auto px-4 fade">
-  <h2 class="text-3xl font-bold mb-10 text-center" id="team-title"></h2>
+  <h2 class="text-3xl font-bold mb-10 text-center" data-i18n="team.title"></h2>
   <div id="team-grid" class="grid md:grid-cols-3 gap-6 text-center">
     <div class="bg-card p-6 border border-border">
       <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-border"></div>
-      <h3 class="font-semibold"></h3>
-      <p class="text-gray-400 text-sm"></p>
+      <h3 class="font-semibold" data-i18n="team.members.0.name"></h3>
+      <p class="text-gray-400 text-sm" data-i18n="team.members.0.role"></p>
     </div>
     <div class="bg-card p-6 border border-border">
       <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-border"></div>
-      <h3 class="font-semibold"></h3>
-      <p class="text-gray-400 text-sm"></p>
+      <h3 class="font-semibold" data-i18n="team.members.1.name"></h3>
+      <p class="text-gray-400 text-sm" data-i18n="team.members.1.role"></p>
     </div>
     <div class="bg-card p-6 border border-border">
       <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-border"></div>
-      <h3 class="font-semibold"></h3>
-      <p class="text-gray-400 text-sm"></p>
+      <h3 class="font-semibold" data-i18n="team.members.2.name"></h3>
+      <p class="text-gray-400 text-sm" data-i18n="team.members.2.role"></p>
     </div>
   </div>
 </section>
-
-<!-- FAQ -->
 <section id="faq" class="py-20 max-w-4xl mx-auto px-4 fade">
-  <h2 class="text-3xl font-bold mb-10 text-center" id="faq-title"></h2>
+  <h2 class="text-3xl font-bold mb-10 text-center" data-i18n="faq.title"></h2>
   <div id="faq-list" class="space-y-4">
     <div class="border border-border p-4 cursor-pointer faq">
-      <div class="flex justify-between"><span></span><i class="fas fa-plus"></i></div>
-      <p class="hidden mt-2 text-gray-400"></p>
+      <div class="flex justify-between"><span data-i18n="faq.items.0.question"></span><i class="fas fa-plus"></i></div>
+      <p class="hidden mt-2 text-gray-400" data-i18n="faq.items.0.answer"></p>
     </div>
     <div class="border border-border p-4 cursor-pointer faq">
-      <div class="flex justify-between"><span></span><i class="fas fa-plus"></i></div>
-      <p class="hidden mt-2 text-gray-400"></p>
+      <div class="flex justify-between"><span data-i18n="faq.items.1.question"></span><i class="fas fa-plus"></i></div>
+      <p class="hidden mt-2 text-gray-400" data-i18n="faq.items.1.answer"></p>
     </div>
   </div>
 </section>
-
-<!-- CONTACT -->
 <section id="contact" class="py-20 max-w-4xl mx-auto px-4 fade">
-  <h2 class="text-3xl font-bold mb-10 text-center" id="contact-title"></h2>
+  <h2 class="text-3xl font-bold mb-10 text-center" data-i18n="contact.title"></h2>
   <form id="contactForm" class="space-y-4">
-    <input type="text" id="name" placeholder="" class="w-full p-3 bg-card border border-border" required>
-    <input type="email" id="email" placeholder="" class="w-full p-3 bg-card border border-border" required>
-    <textarea id="message" placeholder="" class="w-full p-3 bg-card border border-border" required></textarea>
-    <button type="submit" class="bg-white text-black px-6 py-2"></button>
+    <input type="text" id="name" data-i18n-placeholder="contact.form.name" class="w-full p-3 bg-card border border-border" required>
+    <input type="email" id="email" data-i18n-placeholder="contact.form.email" class="w-full p-3 bg-card border border-border" required>
+    <textarea id="message" data-i18n-placeholder="contact.form.message" class="w-full p-3 bg-card border border-border" required></textarea>
+    <button type="submit" data-i18n="contact.form.submit" class="bg-white text-black px-6 py-2"></button>
   </form>
   <p id="formMsg" class="mt-4 text-sm text-gray-400"></p>
 </section>
-
-<!-- BACK TO TOP -->
 <button id="topBtn" class="fixed bottom-6 right-6 hidden bg-white text-black p-3">↑</button>
-
-<!-- FOOTER -->
-<footer class="border-t border-border py-6 text-center text-sm text-gray-500" id="footer"></footer>
-
-<!-- TAWK LIVE CHAT -->
+<footer class="border-t border-border py-6 text-center text-sm text-gray-500" data-i18n="footer.rights"></footer>
 <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/6665b6cd9a809f19fb3bc7ac/1hvul45ek';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-  })();
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src="https://embed.tawk.to/6665b6cd9a809f19fb3bc7ac/1hvul45ek";
+  s1.charset="UTF-8";
+  s1.setAttribute("crossorigin","*");
+  s0.parentNode.insertBefore(s1,s0);
+})();
 </script>
-
-<!-- SCRIPT -->
 <script>
-document.getElementById("menu-btn").onclick = () => {
-  document.getElementById("mobile-menu").classList.toggle("hidden");
-};
-
-document.getElementById("contactForm").onsubmit = e => {
-  e.preventDefault();
-  document.getElementById("formMsg").textContent = translations.contact.form.sentMsg;
-};
-
-const topBtn = document.getElementById("topBtn");
-window.onscroll = () => { topBtn.style.display = window.scrollY > 300 ? "block" : "none"; };
-topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add("opacity-100", "translate-y-0");
-  });
-});
-document.querySelectorAll(".fade").forEach(el => {
-  el.classList.add("opacity-0", "translate-y-6", "transition", "duration-700");
-  observer.observe(el);
-});
-
-document.querySelectorAll(".faq").forEach(item => {
-  item.onclick = () => {
-    const p = item.querySelector("p");
-    const icon = item.querySelector("i");
-    p.classList.toggle("hidden");
-    icon.classList.toggle("fa-plus");
-    icon.classList.toggle("fa-minus");
-  };
-});
-
-// 🌐 Traduction dynamique
-const translations = {};
-
-async function loadTranslations() {
-  const res = await fetch(`/i18n/${lang}/${lang}.json`);
-  const data = await res.json();
-  Object.assign(translations, data);
-  applyTranslations();
-}
-
+document.getElementById("menu-btn").onclick = function() { document.getElementById("mobile-menu").classList.toggle("hidden"); };
+document.getElementById("contactForm").onsubmit = function(e) { e.preventDefault(); document.getElementById("formMsg").textContent = "Message sent."; };
+var topBtn = document.getElementById("topBtn");
+window.onscroll = function() { topBtn.style.display = window.scrollY > 300 ? "block" : "none"; };
+topBtn.onclick = function() { window.scrollTo({ top: 0, behavior: "smooth" }); };
+var observer = new IntersectionObserver(function(entries) { entries.forEach(function(entry) { if (entry.isIntersecting) entry.target.classList.add("opacity-100", "translate-y-0"); }); });
+document.querySelectorAll(".fade").forEach(function(el) { el.classList.add("opacity-0", "translate-y-6", "transition", "duration-700"); observer.observe(el); });
+document.querySelectorAll(".faq").forEach(function(item) { item.onclick = function() { var p = item.querySelector("p"), icon = item.querySelector("i"); p.classList.toggle("hidden"); icon.classList.toggle("fa-plus"); icon.classList.toggle("fa-minus"); }; });
+var lang = "fr";
+var translations = {};
+async function loadTranslations() { var res = await fetch("/i18n/" + lang + ".json"); var data = await res.json(); Object.assign(translations, data); applyTranslations(); }
 function applyTranslations() {
-  // Nav
-  document.querySelectorAll("#nav-links a").forEach((a, i) => {
-    a.textContent = Object.values(translations.nav)[i];
-  });
-  document.querySelectorAll("#mobile-menu a[href^='#']").forEach((a, i) => {
-    a.textContent = Object.values(translations.nav)[i];
-  });
-
-  // Hero
-  document.getElementById("hero-title").textContent = translations.hero.title;
-  document.getElementById("hero-subtitle").textContent = translations.hero.subtitle;
-  document.getElementById("hero-desc").textContent = translations.hero.desc;
-
-  // About
-  document.getElementById("about-title").textContent = translations.about.title;
-  document.getElementById("about-desc").textContent = translations.about.desc;
-
-  // Services
-  document.getElementById("services-title").textContent = translations.services.title;
-  document.querySelectorAll("#services-list > div").forEach((div, i) => {
-    div.querySelector("h3").textContent = translations.services.list[i].title;
-    div.querySelector("p").textContent = translations.services.list[i].desc;
-  });
-
-  // Team
-  document.getElementById("team-title").textContent = translations.team.title;
-  document.querySelectorAll("#team-grid > div").forEach((div, i) => {
-    div.querySelector("h3").textContent = translations.team.members[i].name;
-    div.querySelector("p").textContent = translations.team.members[i].role;
-  });
-
-  // FAQ
-  document.getElementById("faq-title").textContent = translations.faq.title;
-  document.querySelectorAll("#faq-list > div").forEach((div, i) => {
-    div.querySelector("span").textContent = translations.faq.questions[i].q;
-    div.querySelector("p").textContent = translations.faq.questions[i].a;
-  });
-
-  // Contact
-  document.getElementById("contact-title").textContent = translations.contact.title;
-  document.getElementById("name").placeholder = translations.contact.form.name;
-  document.getElementById("email").placeholder = translations.contact.form.email;
-  document.getElementById("message").placeholder = translations.contact.form.message;
-  document.querySelector("#contactForm button").textContent = translations.contact.form.submit;
-
-  // Footer
-  document.getElementById("footer").textContent = translations.footer.copyright;
+  document.querySelectorAll("[data-i18n]").forEach(function(el) { var key = el.getAttribute("data-i18n"); var value = key.split(".").reduce(function(o, k) { return o && o[k]; }, translations); if (value) el.textContent = value; });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(function(el) { var key = el.getAttribute("data-i18n-placeholder"); var value = key.split(".").reduce(function(o, k) { return o && o[k]; }, translations); if (value) el.placeholder = value; });
 }
-
 loadTranslations();
 </script>
-
 </body>
 </html>
