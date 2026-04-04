@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaihou Languages – Open</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body class="bg-[#141517] text-[#fffdf5]">
+
+<!-- NAV -->
+<header class="fixed top-0 w-full bg-[#141517]/80 backdrop-blur border-b border-[#1e2024] z-50">
+  <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+
+    <a href="#hero" class="font-semibold">Kaihou</a>
+
+    <nav class="space-x-6 text-sm text-[#7d8590] hidden md:block">
+      <a href="#about" class="hover:text-white">About</a>
+      <a href="#services" class="hover:text-white">Services</a>
+      <a href="#model" class="hover:text-white">Model</a>
+      <a href="#contact" class="hover:text-white">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="min-h-screen flex items-center justify-center text-center px-6">
+  <div class="fade-in">
+    <h1 class="text-4xl md:text-5xl font-semibold mb-4">Kaihou Languages</h1>
+    <p class="text-[#7d8590] italic mb-6">Open</p>
+    <p class="max-w-xl mx-auto text-lg text-[#7d8590]">
+      Removing language barriers in open projects.
+    </p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-3xl mx-auto px-6 py-20 fade-in">
+  <h2 class="text-xl font-semibold mb-6">About</h2>
+  <p class="text-[#7d8590] mb-4">
+    Kaihou Languages supports open-source projects through language and communication.
+  </p>
+  <p class="text-[#7d8590] mb-4">
+    We help developers and small teams overcome language barriers with translation, interpreting, and simple tools.
+  </p>
+  <p class="text-[#7d8590]">
+    Focused on clarity, accessibility, and real-world impact.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="max-w-5xl mx-auto px-6 py-20 fade-in">
+  <h2 class="text-xl font-semibold mb-10">Services</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="bg-[#1e2024] p-6 rounded-2xl">
+      <h3 class="font-semibold mb-3">Translation</h3>
+      <p class="text-[#7d8590] text-sm">
+        README files, documentation, project websites, UI text, and developer guides.
+      </p>
+    </div>
+
+    <div class="bg-[#1e2024] p-6 rounded-2xl">
+      <h3 class="font-semibold mb-3">Interpreting</h3>
+      <p class="text-[#7d8590] text-sm">
+        Simple meetings, remote discussions, and collaboration between small international teams.
+      </p>
+    </div>
+
+    <div class="bg-[#1e2024] p-6 rounded-2xl">
+      <h3 class="font-semibold mb-3">Tools</h3>
+      <p class="text-[#7d8590] text-sm">
+        Chatbots for FAQs, Telegram support bots, and lightweight communication helpers.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODEL -->
+<section id="model" class="max-w-3xl mx-auto px-6 py-20 fade-in">
+  <h2 class="text-xl font-semibold mb-6">Model</h2>
+  <p class="text-[#7d8590] mb-4">
+    Our services are completely free for open-source projects.
+  </p>
+  <p class="text-[#7d8590] mb-4">
+    Support is welcome but never required.
+  </p>
+  <p class="text-[#7d8590]">
+    This is sustained through affordable work with private clients.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="max-w-3xl mx-auto px-6 py-20 text-center fade-in">
+  <h2 class="text-xl font-semibold mb-6">Contact</h2>
+  <p class="text-[#7d8590] mb-6">
+    Working on an open project?
+  </p>
+  <p class="text-[#7d8590] mb-6">
+    Let’s remove language barriers together.
+  </p>
+  <a href="mailto:contact@kaihoulanguages.com" class="underline">
+    contact@kaihoulanguages.com
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 text-sm text-[#7d8590] border-t border-[#1e2024]">
+  © 2026 Kaihou Languages — Open
+</footer>
+
+<!-- ANIMATIONS -->
+<script>
+  const elements = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
+
+  elements.forEach(el => observer.observe(el));
+</script>
+
+<!-- TAWK CHAT -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6665b6cd9a809f19fb3bc7ac/1hvul45ek';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+</body>
+</html>
