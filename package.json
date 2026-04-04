@@ -1,0 +1,27 @@
+{
+  "name": "kaihoulanguages",
+  "version": "1.0.0",
+  "description": "Kaihou Languages - Removing language barriers in open projects",
+  "scripts": {
+    "dev": "npx serve .",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davv-sudo/kaihoulanguages.git"
+  },
+  "keywords": [
+    "translation",
+    "languages",
+    "open-source"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davv-sudo/kaihoulanguages/issues"
+  },
+  "homepage": "https://github.com/davv-sudo/kaihoulanguages#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
