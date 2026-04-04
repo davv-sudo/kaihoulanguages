@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "hero": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "team": "Equipo",
+    "faq": "Preguntas",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Kaihou Languages",
+    "subtitle": "Abierto",
+    "desc": "Conectando lenguaje y tecnología. Apoyamos proyectos de código abierto."
+  },
+  "about": {
+    "text": "Kaihou Languages combina tecnología e idiomas para eliminar barreras a desarrolladores y proyectos pequeños de código abierto. Ofrecemos traducción, interpretación y soporte digital de idiomas gratuito."
+  },
+  "services": {
+    "title": "Servicios",
+    "translation": "Documentos, README, sitios web de proyectos y contenido sencillo para proyectos de código abierto.",
+    "interpreting": "Soporte para reuniones en línea, discusiones y comunicación en equipos pequeños.",
+    "tools": "Chatbots, bots de Telegram y herramientas de idiomas para apoyar comunidades de código abierto."
+  },
+  "team": {
+    "members": [
+      {"name": "Alex", "role": "Traductor Principal"},
+      {"name": "Mina", "role": "Experta en Localización"},
+      {"name": "Kai", "role": "Integración IA"}
+    ]
+  },
+  "faq": {
+    "title": "Preguntas",
+    "items": [
+      {"question": "¿Para quién es esto?", "answer": "Proyectos de código abierto, equipos pequeños e individuos que necesitan soporte de traducción."},
+      {"question": "¿Los servicios son gratuitos?", "answer": "Completamente gratuitos para proyectos de código abierto. Donaciones apreciadas pero opcionales. Empresas privadas pagan soporte a bajo costo si se solicita."}
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar"
+  },
+  "footer": {
+    "rights": "© 2026 Kaihou Languages"
+  }
+}
