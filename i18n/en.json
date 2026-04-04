@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "hero": "Home",
+    "about": "About",
+    "services": "Services",
+    "team": "Team",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Kaihou Languages",
+    "subtitle": "Open",
+    "desc": "Bridging language and technology. We support open-source projects."
+  },
+  "about": {
+    "text": "Kaihou Languages combines technology and languages to remove barriers for open-source developers and small projects. We provide free translation, interpreting, and digital language support."
+  },
+  "services": {
+    "title": "Services",
+    "translation": "Documents, READMEs, project websites, and simple content for open-source projects.",
+    "interpreting": "Support for online meetings, discussions, and small team communications.",
+    "tools": "Chatbots, Telegram bots, and language tools to assist open-source communities."
+  },
+  "team": {
+    "members": [
+      {"name": "Alex", "role": "Lead Translator"},
+      {"name": "Mina", "role": "Localization Expert"},
+      {"name": "Kai", "role": "AI Integration"}
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {"question": "Who is this for?", "answer": "Open-source projects, small teams, and individuals needing translation support."},
+      {"question": "Are services free?", "answer": "Completely free for open-source projects. Donations appreciated but optional. Private companies pay low-cost support if requested."}
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
+  },
+  "footer": {
+    "rights": "© 2026 Kaihou Languages"
+  }
+}
